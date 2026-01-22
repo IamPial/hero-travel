@@ -1,0 +1,17 @@
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  nav {
+    padding: 10px;
+  }
+  nav .logo-img h2 {
+    font-size: 1.7rem;
+  }
+  nav .hamburger-icon {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
