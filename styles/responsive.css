@@ -1,6 +1,10 @@
 @media screen and (max-width: 576px) {
+  /* shared style */
   .container {
     width: 95%;
+  }
+  .section-heading {
+    font-size: 1.2rem;
   }
   /* nav section */
   nav {
@@ -48,14 +52,28 @@
     padding: 24px 6px;
     flex-direction: column;
   }
-  .tours-content .section-heading {
-    font-size: 1.2rem;
-  }
+
   .tours-content p,
   .tours-content .tours-description-list {
     font-size: 0.9rem;
   }
   .tours-img img {
+    width: 100%;
+  }
+
+  /* destination section */
+  .destination-heading p {
+    line-height: 24px;
+    font-size: 0.9rem;
+    max-width: 300px;
+    margin: 16px auto;
+  }
+  .destination-place {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .destination-img img {
     width: 100%;
   }
 }
