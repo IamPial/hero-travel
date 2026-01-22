@@ -62,7 +62,8 @@
   }
 
   /* destination section */
-  .destination-heading p {
+  .destination-heading p,
+  .choose-section-heading p {
     line-height: 24px;
     font-size: 0.9rem;
     max-width: 300px;
@@ -75,5 +76,24 @@
   }
   .destination-img img {
     width: 100%;
+  }
+
+  /* choose section */
+  .choose-section {
+    padding: 24px 20px;
+  }
+  .choose-content-cards-1 {
+    flex-direction: column;
+  }
+  .card img {
+    width: 48px;
+    height: 48px;
+  }
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+    line-height: 24px;
   }
 }
