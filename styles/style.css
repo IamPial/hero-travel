@@ -11,6 +11,11 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+.section-heading {
+  font-size: 2.5rem;
+  color: #131318;
+  font-weight: 800;
+}
 .btn {
   background-color: #ff5400;
   padding: 14px 35px;
@@ -146,4 +151,35 @@ select {
 .banner-btn .find-now:hover {
   background-color: #837f7f;
   color: #f1bb24;
+}
+
+/* tours section */
+.tours-area {
+  padding: 100px 0;
+  display: flex;
+  gap: 50px;
+}
+.tours-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tours-content p {
+  color: rgba(19, 19, 24, 0.7);
+  line-height: 26px;
+  font-size: 1rem;
+}
+.tours-content p:nth-child(4) {
+  color: #5a5a5d;
+}
+.tours-content .tours-description-list {
+  padding-left: 20px;
+  color: rgba(19, 19, 24, 0.7);
+  line-height: 26px;
+  font-size: 1rem;
+  max-width: 525px;
+}
+.tours-content .tours-description-list li {
+  margin: 10px 0;
 }
