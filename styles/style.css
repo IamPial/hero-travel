@@ -68,7 +68,8 @@ nav ul li a::after {
   width: 0;
   content: "";
   height: 3px;
-  background-image: linear-gradient(to left, #ff4852, #4476ff);
+  /* background-image: linear-gradient(to left, #ff4852, #4476ff); */
+  background-color: #ff5400;
   transition: 0.3s;
 }
 nav ul li a:hover {
