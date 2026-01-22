@@ -6,11 +6,22 @@
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
 }
+/* shared style */
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
-
+.btn {
+  background-color: #ff5400;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+/* navbar section */
 nav {
   padding: 30px;
   display: flex;
@@ -36,14 +47,103 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  position: relative;
 }
-
 nav ul li a {
   text-decoration: none;
   color: #424247;
   font-size: 1.1rem;
+  transition: all 0.3s;
+  position: relative;
+}
+nav ul li a::after {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  content: "";
+  height: 3px;
+  background-image: linear-gradient(to left, #ff4852, #4476ff);
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #ff5400;
+}
+nav ul li a.active:hover {
+  color: #424247;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
 
 nav ul li a.active {
   color: #ff5400;
+}
+
+nav .hamburger-icon {
+  display: none;
+}
+
+/* Banner section */
+
+.banner-section {
+  background-image:
+    linear-gradient(to bottom, rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)),
+    url("../assets/img/group-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  border-radius: 8px;
+}
+.banner-content {
+  text-align: center;
+  padding: 106px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+}
+.banner-content p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 26px;
+  max-width: 676px;
+  margin: 0 auto;
+}
+.banner-content form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.219);
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.banner-content form input[type="text"],
+select {
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.banner-content form select {
+  color: rgba(19, 19, 24, 0.5);
+}
+.banner-content form input::placeholder {
+  color: rgba(19, 19, 24, 0.5);
+}
+
+.banner-btn .find-now {
+  transition: all 0.3s;
+}
+.banner-btn .find-now:hover {
+  background-color: #837f7f;
+  color: #f1bb24;
 }
