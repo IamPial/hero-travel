@@ -240,3 +240,64 @@ select {
   transform: translate(-50%, -50%);
   color: #fff;
 }
+
+/* choose section */
+.choose-section {
+  padding: 100px 0;
+}
+.choose-section-heading {
+  text-align: center;
+}
+.choose-section-heading p {
+  max-width: 640px;
+  margin: 24px auto 48px;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  line-height: 26px;
+}
+.choose-content-cards-1 {
+  display: flex;
+  gap: 24px;
+}
+.choose-content-cards-1 .card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #5a5a5d;
+}
+.card h4 {
+  font-size: 1.5rem;
+  color: #131318;
+  font-weight: 800;
+}
+.card img {
+  width: 64px;
+  height: 64px;
+}
+.choose-content-cards-1 .card:nth-child(1) {
+  border: 1px solid rgba(230, 131, 19, 0.2);
+  border-radius: 16px;
+}
+.choose-content-cards-1 .card:nth-child(2) {
+  border: 1px solid rgba(15, 195, 240, 0.2);
+  border-radius: 16px;
+}
+.choose-content-cards-2 {
+  max-width: 600px;
+  margin: 24px auto 0;
+}
+.choose-content-cards-2 .card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.choose-content-cards-2 .card {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  border-radius: 16px;
+}
